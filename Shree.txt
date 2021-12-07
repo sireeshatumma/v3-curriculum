@@ -877,6 +877,119 @@ console.log(x)
 
 
 
+Database:
+This common location where the information of all players is stored is known as a database. But let's first understand what a database is. A database is just an organised collection of data. Two types of database are cloud and local database. A cloud is a type of a database server (server is just a computer which has a lot of data storage capacity), which is remote, meaning you access it via the internet. You are renting the server space, rather than owning the server (You just pay for the amount of storage/computing power you are using). A local (regular) database is one that is present on your computer. Which of these can we use for creating a multiplayer game? Note to the teacher: Wait for the student's response and respond appropriately. Say: We can use cloud database, since the information won't be accessible to all the players if it is stored on just a single computer's database
+This common location where the information of all players is stored is known as a database. Say: This location which is common for all players, is called a Remote Realtime Database. Remote means somewhere outside the computers of the players (on a server). Realtime means sending the same information instantly to everyone, and Database means the common location where the players' data is being stored.
+
+ Let's see if we can create a simple program and synchronise it using a realtime database. Here, first we need to store the position of the ball in the database. The ball will get displayed at this position on the canvas. This is known as reading the data from the database. As we press any arrow key, the ball changes its position. This change of position gets updated in the database so that it is visible at the updated position in multiple browsers/devices. Here as the database gets updated, you can observe the ball moves at the same time on the canvas to the right. This is known as writing the data into the database
+
+
+
+
+
+Database: server
+1. write to database -from our system - uploading (send)
+2. read from database - to our system -downloading (get)
+
+
+firebase console from google
+
+1. create an account
+2. create a project
+3. settings- permissions
+
+
+connect to database(db)
+
+Reference to db -> .ref();
+
+to read -> .on("value",readFunction, errorFunction)
+
+
+function readFunction(data){//to do}
+
+to write-> set(), update()
+
+
+
+Arrow functions:
+
+var sum=()=>{}
+
+syntax: rules we follow when we write the code
+
+
+Structuring - building, arranging - to avoid confusion
+
+form.js
+game.js
+player.js
+
+HTML - what - nouns
+CSS  - styles -
+JS - how - action
+
+to write html inside javascript, we use DOM elements
+
+Document Object Model-
+input.value()
+
+button->position, size, styles
+
+styles- json = { pn1:pv1, pn2:pv2}
+
+{color:"blue"}
+
+
+input.hide()
+button.hide()
+
+c37:
+
+form.js
+game.js
+player.js
+
+what are you going to do - actions or steps
+Where are you going to do - file 
+
+
+game.js- gameStates
+
+0 - wait - wait for other players to join
+1 - play - start playing
+2 - end  -when player reaches end line
+
+global variables 
+1. gameState
+2. playerCount
+
+both in sketch.js and database
+
+
+
+when the playerCount becomes 2, we change gameState to play -> in sketch.js
+
+class variables we write inside constructor as this.varName
+
+
+to read and write gameState
+
+1. make a reference
+
+ /->called  as root
+
+var gameState=0
+
+var gsRefRead = database.ref("gameState/");
+gsRefRead.on("value",(d)=>{gameState=d.val()} );
+
+var count=1;
+
+var gsRefWrite= database.ref("/");
+gsRefWrite.set({gameState:count});
+
+
 
 
 
