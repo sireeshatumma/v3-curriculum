@@ -1,0 +1,882 @@
+
+
+c0: 
+Editor - where we can write the Program.
+
+Program: Set of instructions (commands) to cpmplete a particular work(task)
+
+drink water from bottle:
+
+1. remove the cap
+2. drink
+
+robot -
+
+1. take bottle from table.
+2. rotate your hand on cap 
+3. take the cap away
+4. 
+
+how to write?  using language
+
+computer languages
+
+sentence - group of words
+instruction- group of words
+
+Java script
+
+function : work to be done
+setup: arrange
+canvas : board on which we can draw, color, paint
+	width , height
+
+draw : to draw
+background: paint the canvas with the given color
+
+
+
+rectangles - width,height, position
+
+rect(x,y,w,h)
+
+c2: 
+
+1. var x = 5  -> initialization = declaration+definition
+declaration -> var x;
+
+definition -> x =5
+
+usage  x+5
+	
+	x= x+5 =>   x += 5
+	 = 5+5
+	x= 10
+	lhs = rhs
+
+2. functions
+() -> parenthesis or round brackets
+[] -> square brackets
+{} -> curly or flower brackets
+
+functionName()
+
+var sprite = createSprite(x,y,w,h);
+
+sum = num1+num2
+
+1. defining function
+2. calling function
+
+
+
+
+
+North ------------ up
+South ----------    down
+East -------------  right 
+West ------------- left
+
+Ball velocities
+X +ve, Y=0   ----------- right /East (horizontal)
+X -ve, Y=0 ------------ left/ West   (horizontal)
+Y +ve , X=0------------ down / south (vertical)
+Y -ve ,X=0 ------------- up /North   (vertical)
+Both X,Y +ve   -----------  South-East
+Both X,Y -ve   ----------   North-West
+X +ve, Y-ve     ---------- North East
+X -ve  , Y +ve  ---------  South West
+
+
+c3: 
+
+var x =2
+var y =3
+
+comparision operators - < less than
+			> more/greate than
+			== equal to   a == A true
+			=== strictly equal to  a === A false
+			<= less than equal to
+			>= greater than equal to
+			!= not equal to
+			!== strictly not equal to
+
+Logical operators - AND - &&  -both the conditions
+		    OR  - ||  - any condition
+		    NOT
+
+Answer as either true or false
+
+condition gives answer as either true or false
+
+if x greater than y then print x is greater than y
+else print y is greater than x
+
+how are you
+
+kaise ho aap
+
+aap kaise ho
+
+rules of writing - syntax
+
+
+
+
+c4
+A. Executes a block of statements a certain number of times.
+B. Instead of typing a block of statements, again and again, we
+include it in a loop.
+C. Multiple instructions can be added in a loop.
+
+
+
+c5: 
+  var x =5
+
+value =data
+ data types:
+1. Number - integers
+2. String - alphabets, numbers, symbol 
+		- enclose with inverted commas
+	example: "Hello World", "123", "Hello@5", "hello@gmail.com"
+3. boolean - true/ false
+4. undefined
+5. null
+
+var s= "hello"
+
+in class 7th there are 34 students
+
+var student1= "name1"
+var student2= "name2"
+
+Grouping 
+
+1. define
+2. declare
+3. use
+
+Arrays - hold multiple values
+	to group the values we use square brackets.
+		element/item
+var students = [ "name1","name2","name3" ]
+	index	    0       1      2
+
+positioning starts with zero
+
+push() and pop()
+
+- callback() - called again and again
+destroy
+
+
+text command to display on canvas
+textsize to give size of the font
+
+
+c6: 
+
+Adding or joining two strings -> string concatenation
+
+text (score , 100,100)
+
+Game states
+matter - three forms - solid , liquid, gas
+
+serve/initial state , play state, end/gameover state
+
+cricket -  players will get ready in positions - serve/ initial
+	   ball is bowled then - play state
+	   game over when all players are out
+
+bricks , paddle, ball
+
+serve - ball doesnt move - velocities are zero
+play  - 1. ball moves 
+	2. ball hits the bricks, bricks will be destroyed
+	3. increase score
+	4. paddle doesnt go out of canvas
+	5. ball bounce of paddle, top, left, right
+over-  1. all bricks destroyed. -> game won
+	2. all lives are over -> game lost
+	
+lives = 3
+condition :  if ball touches the bottom edge - decrease one life
+		if all lives are over - game over
+	
+
+
+
+c9:  
+Scope - area where it is available
+1. Local - limited area.    - inside functions - {} 
+2. global -unlimited or vast -outside functions
+
+
+writing our code - 
+where do we write 
+1.online  - on browser
+2. offline  -on our system(laptop)
+
+local environment - our system
+
+
+html - hypertext markup language
+ filename.extension
+ index.html
+
+styles 
+css - cascading style sheets
+	 filename.extension
+	style.css
+
+js - javascript 
+	 filename.extension
+	sketch.js
+ 
+library files - where books are store - we borrow/rent books
+1. directly use from website  - internet - online
+2. download on to ur system.   - offline
+
+editor - where we the code.
+online -> editor.p5.js , code.org
+offile -> VSC - visual studio code
+
+server - helps to run the code
+
+Github - online store for storing code, files - remote (not on our system)
+	upload and download
+	repository (project)
+
+
+c10:
+
+Arrays 
+Accessing - index
+ marks -> marks[index]
+
+Animations
+
+function preload(){
+
+}
+
+loadAnimation - getting
+addAnimation  - add to canvas
+
+Jump -> go up and come down
+     
+
+gravity - force which acts on body to pull it towards itself
+	- opposite velocity applied on the body
+
+     trex.velocityY = trex.velocityY+( -0.5)
+
+
+
+
+
+c13: 
+
+
+Hard disk - ROM -read only memory
+RAM - Random access memory
+
+
+c14: 
+
+JSON - javascript object notation - javascript objects
+ object - thing - has properties 
+		
+
+
+trex -> switch case and obstacles
+
+string concatenation ->
+	text("score: "+score, x, y)
+
+game states: 
+
+brick game
+1. start - wait for all players
+2. play  - play game
+3. end  - stop game
+
+in trex
+1. Play
+2. end
+
+
+play -
+trex jump
+ground moves
+clouds and obstacles spawn
+score increases
+
+when trex touches any obstacle -> end
+
+
+
+windowWidth, windowHeight -> screen size for every device.
+createCanvas(w,h)
+
+space bar
+before tapping
+touches = []  -> length==0
+after tapping, 
+touches= [ (x,y) ] -> length!=0
+
+keyDown("space")  OR /AND   touches.length !== 0
+		any(||)/Both(&&)
+|| -> pipe
+&  -> ampersand
+
+if(keyDown("space")|| touches.length !== 0){
+	jumps;
+	touches = [] -> empty
+}
+
+
+mobile compatability
+
+-> apk(android package kit) file 
+-> ipa (ios) file
+
+
+c20:
+
+Sprites
+library files - P5.js, P5.play.js
+
+Physical bodies
+velocity, speed, gravity,force,push,pull, friction
+
+Physics Engine or matter.js
+library  -Matter 
+include library inside index.html
+
+Matter.Engine
+Matter.World
+Matter.Bodies
+
+const Engine =Matter.Engine
+const World =Matter.World
+const Bodies =Matter.Bodies
+
+Classes:  Engine				World				Bodies
+
+	1. create Engine		-once  =>    var engine =Engine .create();
+	2. connect engine to world      -once  =>    var world= engine.world  // score =score+1
+	3. create Bodies                -once  =>    var ball = Bodies.circle(x,y,r,options);
+	4. add bodies to world          -once  =>     World.add(world, ball);
+	5. draw the bodies              -always/ again    ellipse(x,y,2*r,2*r)
+	6. start engine/ update engine  -always/ again  Engine .update(engine)
+	
+
+Bodies will have shape - circle, rectangle, pentagon
+
+Nouns and Pronouns
+global and local
+
+in a class global variables are declared inside constructor using THIS keyword
+class Box{
+constructor(x,y,w,h){
+
+this.x= x;
+this.y=y;
+}
+
+}
+
+
+
+to make 2 as 3 , we add 1 to 2
+to make 2 as 6, we add 4 to 2 or multiply 2 by 3
+
+
+
+1. with sprites:
+	var s = createSprite(200,200)
+	a. loadImage 
+		var img=loadImage("image.png");
+	b. addImage
+		s.addImage(img)
+	
+
+2. with out sprites
+	a. loadImage 
+		var img = loadImage("image.png")
+	b. addImage
+		image(img,x,y,w,h)
+	// rect(x,y,w,h)
+
+
+rotate - moving with angle
+
+angle - degrees , radians (defualt) 
+90 in r -> 90 * 3.14 / 180
+
+from radians to degrees -> multiply by (pi/180) = 3.14/180
+from degrees to radians - > multiply by (180/pi)
+
+MKS - FPS
+
+distance- weight - time
+Meters  - kilo w -seconds
+Foot   - Pound  - seconds
+
+
+
+ax =b
+ x= b/a
+
+
+to make the body move- velocity, direction
+
+translate - change the x, y values when rotate.
+
+
+vector - { x: 0, y:0 } -> json
+
+
+point/position = [x,y] -> datatype is array
+
+data is value
+
+trajectory = path of the ball
+
+press down arrow.
+
+event - action we do
+ mouse click, key press, key release
+
+cannonBall - new CannonBall(x,y)
+
+1. create the ball  -> keyPressed or keyWentDown
+2. display the ball  ->keyPressed or keyWentDown
+3. shoot the ball   -> keyReleased or KeyWentUp
+
+keyCode === DOWN_ARROW
+
+Arrays - [ ball1, ball2, ball3, ball4 ]
+
+
+push() - add elements to array
+pop()  - to delete elemnts from array
+
+positioning starts from 0
+counting starts from 1
+
+
+Accesing the elements
+
+multi dimentional - 2D
+var positions = [ [50,100] ,
+		 [150,100] ,
+		 [150,170] ]
+
+positions[2] = [150,170]
+
+positions[2][1] =170
+
+main index = row index
+sub index = col index
+position[row][col]
+
+var x = [20, 30, 40] 
+x[3] = 40
+
+To access Arrays, we can use for loop.
+For loop has three expressions. Initialisation, conditional and increment
+Initialisation: 
+As array indexing starts from 0, we take variable with initial value 0
+var i=0;
+conditional: Since we want for loop to iterate for all items, our variable should be less than or equal to highest index of array.
+highest index of array is one less than length of array . so, 
+i<=array.length -1  or i<array.length
+increment: as the difference between two arrays is 1, we increment variable by one for every iteration.
+i=i+1
+
+index        0   1  2  3
+var array = [20,30,40,50 ]  -> length = 4
+highest index =length-1
+
+for(var i=0;i<=array.length -1;i=i+1){
+
+}
+
+var boats = []
+
+5 boats at a time
+
+if(boats.length>0) {  }else{ create boats }
+
+1. create a class 
+
+2. moving the boat
+Matter.Body.setVelocity(bodyname, {x:0,y:0} )
+
+
+- Aryan -red, Anurag-blue
+
+pronoun - this
+
+noun
+Aryan's pencil and Anurag's pencil
+
+create boats
+
+1 boat - then boat moves 
+
+
+c26
+
+boats = [boat1,boat2]
+balls = [ball1, ball2]
+
+var name;    -> undefined
+
+
+1 . boat1, ball1
+
+
+1. find collision
+2. remove the ball and boat
+	a. ball position
+	b. give some time for boat.-> setTimeInterval
+
+
+
+
+
+
+
+
+c27
+
+
+var img = loadImage("assets/imageName.png")
+var img1 = loadAnimation("assets/imageName1.png", "assets/imageName2.png","assets/imageName3.png")
+
+
+ar = [ "assets/imageName1.png", "assets/imageName2.png","assets/imageName3.png" ]
+
+add item to array - push()
+
+Json - Javascript Object Notation
+
+		p n   p value
+var students = {name:"Aryan",
+		 grade:08,
+		school:"DPS"}
+
+name :(colon) value pairs
+
+jsonName.propertyName = propertyValue
+
+
+var students = {student1:{}, student2:{} }
+
+var studentArray = [{},{},{} ]
+
+var students = { studentArray :[{n:"a",g:8,s:"D"},{n:"a1",g:8,s:"D1"},{n:"a2",g:8,s:"D2"} ]
+ 		}
+
+
+for( var i=0; i<studentArray.length; i=i+1 ){
+	var x =studentArray[i]
+
+}
+
+
+c28:
+
+library files- import or add inside index.html
+
+p5.js, p5.play.js, matter.js
+
+
+boat(body1) touching tower(body2) decided by? 
+var collide= Matter.SAT.collides(body1,body2)
+
+proper boat should touch. not broken one
+
+when(if) true then display popup or alert-> sweet alert
+
+library : sweet library -> add in index.html
+method : swal({},function(isConfirm){})
+
+json = {pn1:pv1 , pn2:pv2, pn3:pv3}
+
+   imageURL:"",
+   heading: "Game Over",
+   text : "",
+   buttonText: ""
+
+if(isConfirm){
+location.reload();
+}
+
+URL -uniform resource locator
+
+
+isConfirm -> boolean -> flags
+
+yes -> true
+no -> false
+
+variables that hold boolean values are called flags
+
+
+sounds:
+1. load the sound -> loadSound("path/address")
+2. play the sound
+
+backgroundMusic
+
+style: appearence or look of a particular one.
+to use we need -> stylesheet
+
+inside index.html
+js files-> script tag  <script> </script>
+style files ->css - cascading style sheets
+              <link> tag
+
+
+c29: 
+
+rectangles grouped to form chain
+
+
+SPRITES - group
+	group.add(sprite)
+
+BODIES -Matter.Composites, composite
+
+stack - keeping one object on top of another
+chain - keep side ny side.
+
+to attach we use Matter.Constraint.
+
+
+
+like Bodies is used to create bodies,
+Body is used to apply any property after creation
+
+callback- a function wthat will be called again and again
+
+
+Matter.Composites.stack(xx, yy, columns, rows, columnGap, rowGap, callback)  will return an array
+
+		10, 10 ,7, 1 ,5,5,
+
+inside callback function, create the bodies
+Matter.Bodies.rectangle(x, y, width, height, [options]) 
+
+function(x,y){
+
+Matter.Bodies.rectangle(x, y, width, height, [options]) 
+}
+
+
+
+c31:
+
+if image, - one frame
+	1. var img=loadImage("");
+	2. sprite.addImage(img);
+if animation - more than one frame
+	1. var anim = loadAnimation("i1.png", "","");
+	2. sprite.addAnimation("name" , anim);
+
+blink
+	blink.playing =true
+	blink.looping = false
+	blink.frameDelay =20
+eat
+	eat.playing = true
+	eat.looping = false
+	eat.frameDelay =20
+
+sad
+	sad.playing = true
+	sad.frameDelay =20
+
+
+properties.
+1. playing =true means animation plays
+	   =false means animation will not play
+2. looping - repeating
+           = true means it repeats
+	   =false means no repeat
+3. speed is a value
+	use frames concept
+	frameDelay
+higher the frameDelay, slow is the speed
+
+
+->
+if eating-> bunny and fruit are touching- collide
+
+if not eating -> fruit and ground are touching- collide
+
+if both are physics bodies, we use
+Matter.SAT.collides
+here we have one body and sprite
+distance - dist()-> in p5.js
+positions of body and sprite
+body.position.x,body.position.y , sprite.position.x,spite.position.y
+
+
+if(d<80) { return true}
+else {return false}
+
+return means => send back
+
+if fruit exists or not.
+
+!= operator
+
+var a=2;
+var b=3;
+
+if(a != b){}
+
+->
+World.remove(world, fruit) => fruit = null
+
+when u remove the fruit from World, its value becomes null
+
+if(fruit != null){}
+
+declare, define, use
+
+
+
+
+
+
+Arrays:
+
+data - value
+
+datatype -type of value
+
+single values
+1. number or integer
+2. strings - alpha numeric symbols - write with in inverted commas (" ")
+3. boolean - true/false
+4. undefined - not defined -no value
+5. null - nothing
+
+multiple values
+
+6. array - enclosed with square brackets []
+7. json - enclosed with curly brackets {}
+
+
+3. var num=100;
+   var name= "Rishi";
+   var color=["red","yellow"];
+//              0  1     2
+   var array=[num,name,color];
+ 	     [100,"Rishi",["red","yellow"]]
+
+var json= { num:100,name:"Rishi",color:["red","yellow"] }
+
+   console.log(array[1]);
+
+              0       1       2
+var array= ["red","yellow","blue"]
+     
+1. index - position of the item or element- starts with 0
+2. length of array - count of items or elements - starts with 1
+3. highest index = length - 1
+
+to access we use for loop
+
+if we have repeated steps
+
+1. initialisation = declare+define
+var i; + i=0; => var i=0;
+2. condition - boolean answer - true/false
+	operators - <, >, <=, >=, ==, ===, !=, !== 
+
+i<"Hello" -> invalid
+i=="Hello"
+
+2. increment or decrement
+increment - add
+decrement - substract
+
+              0       1       2
+var array= ["red","yellow","blue"]
+
+
+
+for (var i=0; i<array.length ;i=i+1) {
+
+console.log(array[i])
+
+}
+
+1.	Write a condition to check if one number is greater than other number.
+
+Ans:
+	if condition
+input : two numbers
+operator: >
+output if condition
+
+var num1 = 2;
+var num2 = 4;
+
+if(num1>num2){
+
+}else {
+
+}
+
+2.	Write a condition to check if ball is touching right edge.
+
+Ans: 
+we need: ball, right edge, if condition
+
+operator: isTouching
+
+var ball = createSprite(200,200,50,50);
+
+var edges = createEdgeSprites();
+
+var rightEdge = edges[2]
+
+if(ball.isTouching(rightEdge)) {
+
+}
+
+3.	Print squares of numbers from 1 to 10
+
+steps: 
+1. take one number
+2. square it
+3. print it
+
+repeat from 1 to 10
+
+for(var i=1; i<=10;i=i+1) {
+
+var x =Math.pow(i,2)
+console.log(x)
+}
+
+5.	Write a function that prints the result of multiplication of two numbers. And call the function.
+6. Write a class (name: Calculations) for all math calculations like add, sub, mul, division, reminder. Call each from sketch.js
+
+
+
+
+
+
+
